@@ -3,5 +3,5 @@ services:
     name: springboot-demo
     env: docker
     plan: free
-    dockerfilePath: ./Dockerfile.dockerfile
+    dockerfilePath: ./Dockerfile
 
