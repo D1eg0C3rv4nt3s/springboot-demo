@@ -1,7 +1,7 @@
-# Usa la imagen oficial de OpenJDK
+# Usa imagen oficial de Java
 FROM openjdk:17-jdk-slim
 
-# Copia el JAR compilado al contenedor
+# Copia el jar compilado al contenedor
 COPY target/*.jar app.jar
 
 # Expone el puerto 8080
@@ -9,3 +9,4 @@ EXPOSE 8080
 
 # Comando para arrancar
 ENTRYPOINT ["java","-jar","/app.jar"]
+
